@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-IMTIYAZ | براند الموضة الحديثة</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- استيراد خط أنيق من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- الترويسة (Navbar) -->
+    <header>
+        <div class="logo">AL-IMTIYAZ<span>.</span></div>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#products">التشكيلة الجديدة</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- قسم الترحيب البصري (Hero Section) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">تعرّف على مفهوم <span class="gradient-text">الراحة الفاخرة</span></h1>
+            <p class="fade-in-delay">أطقم شبابية بتصاميم سريالية وقصات مواكبة لأحدث صيحات الموضة العالمية.</p>
+            <a href="#products" class="btn-primary">اكتشف التشكيلة الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات والتنسيقات (Products Section) -->
+    <section id="products" class="products-section">
+        <h2 class="section-title">إصدارات حصرية <span>(Drop 01)</span></h2>
+        
+        <div class="products-grid">
+            <!-- الطقم الأول -->
+            <div class="product-card">
+                <div class="badge">الأكثر طلباً</div>
+                <div class="product-img-box">
+                    <!-- وضعت لك رابط صورة تجريبية عالية الجودة من الإنترنت لتجربة التصميم فوراً -->
+                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=600&auto=format&fit=crop" alt="طقم عنابي وبيج">
+                </div>
+                <div class="product-info">
+                    <h3>طقم كاجوال - Crimson & Beige</h3>
+                    <p class="desc">تيشرت أحمر غامق (أوفربيلد) مع بنطلون جبردين شبه مطاطي بلون بيج رملي.</p>
+                    <div class="price-row">
+                        <span class="price">جاهز للطلب</span>
+                        <button class="order-btn" onclick="sendWhatsApp('طقم كاجوال - Crimson & Beige')">اطلب عبر واتساب</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الطقم الثاني -->
+            <div class="product-card">
+                <div class="product-img-box">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600&auto=format&fit=crop" alt="تيشرت قطن راقي">
+                </div>
+                <div class="product-info">
+                    <h3>تيشرت قطني - Minimalist Black</h3>
+                    <p class="desc">قطن 100% طويل التيلة ثقيل الوزن، بقصة مريحة وشعار فخم مطرز على الصدر.</p>
+                    <div class="price-row">
+                        <span class="price">جاهز للطلب</span>
+                        <button class="order-btn" onclick="sendWhatsApp('تيشرت قطني - Minimalist Black')">اطلب عبر واتساب</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل ومعلومات التواصل -->
+    <footer id="contact">
+        <p>© 2026 براند AL-IMTIYAZ. جميع الحقوق محفوظة.</p>
+        <p>خدمة التوصيل متوفرة لجميع المحافظات اليمنية، والدفع عند الاستلام.</p>
+    </footer>
+
+    <script href="script.js"></script>
+</body>
+</html>
