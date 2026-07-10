@@ -255,3 +255,165 @@ footer p {
     font-size: 14px;
     margin-bottom: 10px;
 }
+
+/* الحاوية الرئيسية المرنة */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;       /* أهم خاصية: تمنع التشوه وتجعل العناصر تنزل لسطر جديد تلقائياً */
+    justify-content: center; /* موازنة الكروت في المنتصف بشكل أنيق */
+    gap: 30px;             /* مسافة ثابتة ومريحة بين كل كرت وآخر */
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* بطاقة المنتج الذكية والمعاصرة */
+.custom-product-card {
+    background: #141417;
+    border-radius: 16px;
+    width: 300px;          /* عرض ثابت ومناسب لكل كرت على كافة الشاشات */
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* حركة تريند عند تمرير الماوس فوق الكرت */
+.custom-product-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 65, 108, 0.3);
+}
+
+/* حاوية الصورة لضمان ثبات الأبعاد ومنع تمددها */
+.img-wrapper {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* تجعل الصورة تتناسق داخل المربع بدون تمطيط أو تشويه */
+    transition: transform 0.5s ease;
+}
+
+.custom-product-card:hover .img-wrapper img {
+    transform: scale(1.05); /* حركة تكبير خفيفة للصورة تعطي شعوراً بالفخامة */
+}
+
+/* حاوية النصوص والأزرار داخل الكرت */
+.info-wrapper {
+    padding: 20px;
+    text-align: right;
+}
+
+.info-wrapper h3 {
+    font-size: 18px;
+    color: #f3f4f6;
+    margin-bottom: 8px;
+}
+
+.info-wrapper p {
+    font-size: 14px;
+    color: #9ca3af;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+/* زر الواتساب الأنيق */
+.info-wrapper button {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.custom-product-card:hover .info-wrapper button {
+    background: white;
+    color: #0a0a0c;
+    border-color: white;
+}/* الحاوية الرئيسية المرنة */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;       /* أهم خاصية: تمنع التشوه وتجعل العناصر تنزل لسطر جديد تلقائياً */
+    justify-content: center; /* موازنة الكروت في المنتصف بشكل أنيق */
+    gap: 30px;             /* مسافة ثابتة ومريحة بين كل كرت وآخر */
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* بطاقة المنتج الذكية والمعاصرة */
+.custom-product-card {
+    background: #141417;
+    border-radius: 16px;
+    width: 300px;          /* عرض ثابت ومناسب لكل كرت على كافة الشاشات */
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* حركة تريند عند تمرير الماوس فوق الكرت */
+.custom-product-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 65, 108, 0.3);
+}
+
+/* حاوية الصورة لضمان ثبات الأبعاد ومنع تمددها */
+.img-wrapper {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* تجعل الصورة تتناسق داخل المربع بدون تمطيط أو تشويه */
+    transition: transform 0.5s ease;
+}
+
+.custom-product-card:hover .img-wrapper img {
+    transform: scale(1.05); /* حركة تكبير خفيفة للصورة تعطي شعوراً بالفخامة */
+}
+
+/* حاوية النصوص والأزرار داخل الكرت */
+.info-wrapper {
+    padding: 20px;
+    text-align: right;
+}
+
+.info-wrapper h3 {
+    font-size: 18px;
+    color: #f3f4f6;
+    margin-bottom: 8px;
+}
+
+.info-wrapper p {
+    font-size: 14px;
+    color: #9ca3af;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+/* زر الواتساب الأنيق */
+.info-wrapper button {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.custom-product-card:hover .info-wrapper button {
+    background: white;
+    color: #0a0a0c;
+    border-color: white;
+}
